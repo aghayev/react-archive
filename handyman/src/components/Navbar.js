@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <nav>
       <ul className={x.join(" ")}>
-        {accordionData.map(({ title, url }) => (
-          <Accordion title={title} url={url} />
+        {accordionData.map(({ title, content }) => (
+          <Accordion title={title} content={content} />
         ))}
       </ul>
     </nav>

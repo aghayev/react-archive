@@ -1,14 +1,23 @@
 export const accordionData = [
-    {
-      title: 'Home',
-      url: '/',
+  {
+    title: "Inside",
+    content: []
+  },
+  {
+    title: "Outside",
+    content: [
+      {
+        title: "Painting",
+        url: "/painting",
       },
-    {
-      title: 'Handyman',
-      url: '/handyman',
+      {
+        title: "Concrete Base",
+        url: "/concrete-base",
       },
-    {
-      title: 'Concrete Base',
-      url: 'concrete-base',
-    },
-  ];
+      {
+        title: "Parking Space",
+        url: "/parking-space",
+      },
+    ],
+  },
+];
