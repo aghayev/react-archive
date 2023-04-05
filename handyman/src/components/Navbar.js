@@ -1,19 +1,14 @@
-import { menuItems } from '../menuItems';
-import MenuItems from './MenuItems';
+import { accordionData } from "../accordiondata";
+import Accordion from "./Accordion";
+
 const Navbar = () => {
+  let x=['accordion'];
   return (
     <nav>
-      <ul className="menus">
-        {menuItems.map((menu, index) => {
-          const depthLevel = 0;
-          return (
-            <MenuItems
-              items={menu}
-              key={index}
-              depthLevel={depthLevel}
-            />
-          );
-        })}
+      <ul className={x.join(" ")}>
+        {accordionData.map(({ title, url }) => (
+          <Accordion title={title} url={url} />
+        ))}
       </ul>
     </nav>
   );
