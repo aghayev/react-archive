@@ -1,7 +1,12 @@
 export const accordionData = [
   {
     title: "Inside",
-    content: []
+    content: [
+      {
+        title: "Bathroom",
+        url: "/bathroom",
+      }
+    ]
   },
   {
     title: "Outside",

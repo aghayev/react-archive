@@ -4,6 +4,7 @@ import Bathroom from '../routes/Bathroom';
 import Lighting from '../routes/Lighting';
 import Guttering from '../routes/Guttering';
 import ConcreteBase from '../routes/ConcreteBase';
+import Painting from '../routes/Painting';
 import Layout from './Layout';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="bathroom" element={<Bathroom />} />
           <Route path="lighting" element={<Lighting />} />
           <Route path="guttering" element={<Guttering />} />
+          <Route path="painting" element={<Painting />} />
           <Route path="*" element={<p>Not found!</p>} />
         </Route>
       </Routes>
